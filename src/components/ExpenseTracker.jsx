@@ -46,7 +46,7 @@ const ExpenseTracker = () => {
         <ul>
           {expenses.map((expense, index) => (
             <li key={index}>
-              {expense.category}: ${expense.amount}
+              {expense.category}: ₹{expense.amount}
               <button onClick={() => handleRemoveExpense(index)}>Remove</button>
             </li>
           ))}
