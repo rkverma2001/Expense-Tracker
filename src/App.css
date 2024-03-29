@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.container {
+  height: 55vh;
+  width: 60vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
