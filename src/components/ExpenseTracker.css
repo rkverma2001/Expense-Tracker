@@ -3,7 +3,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 95px;
+  margin: 35px;
 }
 
 .expense-tracker h2 {
@@ -30,8 +30,57 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .expense-tracker button:hover {
   background-color: #0056b3;
+}
+
+.expenses-list {
+  margin-top: 20px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.expenses-list h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.expenses-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expenses-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.expenses-list li:last-child {
+  border-bottom: none;
+}
+
+.expenses-list button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expenses-list button:hover {
+  background-color: #c82333;
+}
+
+/* Hide scrollbar */
+.expenses-list::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* Make scrollbar transparent */
 }
